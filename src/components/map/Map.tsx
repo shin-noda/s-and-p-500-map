@@ -1,4 +1,4 @@
-// src/components/Map/Map.tsx
+// src/components/map/Map.tsx
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import { useEffect, useState } from "react";
 
@@ -15,18 +15,15 @@ import "../../utils/leafletIcons";
 // css
 import "leaflet/dist/leaflet.css";
 
-const Map = () => {
-  const [companies, setCompanies] = useState<Company[]>([]);
+interface MapProps {
+  companies: Company[];
+}
+
+const Map = ({ companies }: MapProps) => {
   const [usStates, setUsStates] = useState<FeatureCollection | null>(null);
 
   useEffect(() => {
     const base = import.meta.env.BASE_URL;
-
-    // Load companies
-    fetch(`${base}data/companies.json`)
-      .then((res) => res.json())
-      .then((data) => setCompanies(data))
-      .catch((err) => console.error("Error loading companies.json:", err));
 
     // Load US states GeoJSON
     fetch(`${base}data/us_states_5m.json`)
@@ -46,12 +43,11 @@ const Map = () => {
       center={[37.8, -96]} // Rough center of the US
       zoom={5}
       style={{ 
-        height: "100vh", 
+        height: "100%", 
         width: "100%",
       }}
       bounds={bounds} // auto-fit all markers
     >
-      {/* Hide OpenStreetMap tiles (just use polygon) */}
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
@@ -63,7 +59,7 @@ const Map = () => {
         <GeoJSON
           data={usStates}
           style={{
-            fillColor: "#f2f2f2", // US is grey
+            fillColor: "#f2f2f2",
             color: "#999",
             weight: 1,
             fillOpacity: 1.0,

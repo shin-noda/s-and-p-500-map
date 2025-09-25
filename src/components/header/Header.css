@@ -1,0 +1,31 @@
+.header {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header.header {
+  flex: 0 0 auto; /* header takes only its content height */
+}
+
+.header-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 1rem; /* space-x-4 */
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #d1d5db; /* Tailwind gray-300 */
+}
