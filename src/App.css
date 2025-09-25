@@ -1,12 +1,11 @@
 .app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* Main content takes remaining space */
 .main-content {
-  flex: 1 1 auto; /* map fills remaining space */
-  min-height: 0; /* allows the map to shrink properly inside flex */
-  overflow: hidden;
+  flex: 1;
+  min-height: 0; /* allows flex children to shrink */
+  display: flex;  /* <- add this */
 }

@@ -1,19 +1,11 @@
-// src/components/map/Map.tsx
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import { useEffect, useState } from "react";
-
-// components
 import CompanyMarker from "../companyMarker/CompanyMarker";
-
-// types
 import type { FeatureCollection } from "geojson";
 import type { Company } from "../../types/company";
-
-// utils
 import "../../utils/leafletIcons";
-
-// css
 import "leaflet/dist/leaflet.css";
+import "./Map.css";
 
 interface MapProps {
   companies: Company[];
@@ -24,8 +16,6 @@ const Map = ({ companies }: MapProps) => {
 
   useEffect(() => {
     const base = import.meta.env.BASE_URL;
-
-    // Load US states GeoJSON
     fetch(`${base}data/us_states_5m.json`)
       .then((res) => res.json())
       .then((data) => setUsStates(data))
@@ -39,39 +29,40 @@ const Map = ({ companies }: MapProps) => {
       : undefined;
 
   return (
-    <MapContainer
-      center={[37.8, -96]} // Rough center of the US
-      zoom={5}
-      style={{ 
-        height: "100%", 
-        width: "100%",
-      }}
-      bounds={bounds} // auto-fit all markers
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
-        opacity={0}
-      />
-
-      {/* US states polygon */}
-      {usStates && (
-        <GeoJSON
-          data={usStates}
-          style={{
-            fillColor: "#f2f2f2",
-            color: "#999",
-            weight: 1,
-            fillOpacity: 1.0,
-          }}
+    <div className="map-page-container">
+      <MapContainer
+        className="map-container"
+        center={[37.8, -96]}
+        zoom={4.5}
+        bounds={bounds}
+        scrollWheelZoom={true}
+        
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+          opacity={0}
         />
-      )}
 
-      {/* Company markers */}
-      {companies.map((company) => (
-        <CompanyMarker key={company.Symbol} company={company} />
-      ))}
-    </MapContainer>
+        {/* US states polygon */}
+        {usStates && (
+          <GeoJSON
+            data={usStates}
+            style={{
+              fillColor: "#f2f2f2",
+              color: "#999",
+              weight: 1,
+              fillOpacity: 1.0,
+            }}
+          />
+        )}
+
+        {/* Company markers */}
+        {companies.map((company) => (
+          <CompanyMarker key={company.Symbol} company={company} />
+        ))}
+      </MapContainer>
+    </div>
   );
 };
 

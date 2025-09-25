@@ -1,0 +1,49 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.about-toc {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.about-toc h2 {
+  margin-top: 0;
+}
+
+.about-toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-toc li {
+  margin: 0.5rem 0;
+}
+
+.about-toc a {
+  text-decoration: none;
+  color: #1d4ed8; /* blue */
+  transition: color 0.2s;
+}
+
+.about-toc a:hover {
+  color: #2563eb; /* slightly darker blue */
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  margin-top: 0;
+}

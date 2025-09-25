@@ -1,0 +1,43 @@
+.analysis-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: #1f2937; /* slate-800 */
+  line-height: 1.6;
+}
+
+.analysis-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #111827; /* slate-900 */
+}
+
+.analysis-intro {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.analysis-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #374151; /* slate-700 */
+}
+
+.analysis-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.analysis-list li {
+  margin-bottom: 0.75rem;
+}
+
+.analysis-fun {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: #111827;
+}

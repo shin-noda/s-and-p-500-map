@@ -1,9 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
+// App.tsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // components
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+
+// pages
 import Map from "./components/map/Map";
+import Analysis from "./pages/analysis/Analysis";
+import About from "./pages/about/About";
 
 // hooks
 import { useSearch } from "./hooks/useSearch";
@@ -25,12 +30,17 @@ const App = () => {
   return (
     <BrowserRouter basename="/s-and-p-500-map">
       <div className="app">
-        {/* Pass the search query handler to Header */}
         <Header onSearch={setQuery} />
 
         <main className="main-content">
-          {/* Pass filtered companies to Map */}
-          <Map companies={filteredCompanies} />
+          <Routes>
+            <Route
+              path="/"
+              element={<Map companies={filteredCompanies} />}
+            />
+            <Route path="/analysis" element={<Analysis />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
         </main>
 
         <Footer />

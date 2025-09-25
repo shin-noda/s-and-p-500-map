@@ -30,6 +30,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
       <SearchBar value={searchQuery} onChange={handleSearchChange} placeholder="Search companies..." />
 
       <nav className="nav-links">
+        <Link to="/analysis">Analysis</Link>
         <Link to="/about">About</Link>
       </nav>
     </header>

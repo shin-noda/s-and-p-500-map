@@ -1,0 +1,11 @@
+.map-page-container {
+  flex: 1;       /* fills remaining space in main-content */
+  display: flex;  /* lets map-container expand */
+  min-height: 0;  /* allows shrinking */
+}
+
+.map-container {
+  flex: 1;       /* fills container */
+  min-height: 0; /* crucial for Leaflet */
+  width: 100%;
+}
