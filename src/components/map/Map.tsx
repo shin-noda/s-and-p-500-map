@@ -17,14 +17,16 @@ const Map = () => {
   const [usStates, setUsStates] = useState<FeatureCollection | null>(null);
 
   useEffect(() => {
+    const base = import.meta.env.BASE_URL;
+
     // Load companies
-    fetch("/data/companies.json")
+    fetch(`${base}data/companies.json`)
       .then((res) => res.json())
       .then((data) => setCompanies(data))
       .catch((err) => console.error("Error loading companies.json:", err));
 
     // Load US states GeoJSON
-    fetch("/data/us_states_5m.json")
+    fetch(`${base}data/us_states_5m.json`)
       .then((res) => res.json())
       .then((data) => setUsStates(data))
       .catch((err) => console.error("Error loading us_states_5m.json:", err));
@@ -46,6 +48,7 @@ const Map = () => {
       }}
       bounds={bounds} // auto-fit all markers
     >
+      {/* Hide OpenStreetMap tiles (just use polygon) */}
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
@@ -57,7 +60,7 @@ const Map = () => {
         <GeoJSON
           data={usStates}
           style={{
-            fillColor: "#f2f2f2",
+            fillColor: "#f2f2f2", // US is grey
             color: "#999",
             weight: 1,
             fillOpacity: 1.0,
