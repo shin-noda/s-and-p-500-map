@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+S&P 500 Map visualizes the headquarters of the largest US companies on an interactive world map. It allows users to explore geographic distributions, see company details, and spot patterns across industries.
 
-Currently, two official plugins are available:
+## Data Collection
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Started with a Google Sheet for structured input.
+* Collected: company name, ticker, headquarters address, logo/photo, latitude & longitude.
+* Mention any challenges (address normalization, missing logos, etc.).
 
-## React Compiler
+## Data Processing
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Cleaned up addresses → converted to lat/lng.
+* Verified company info manually / with sources.
+* Organized into a JSON/CSV → ready for frontend.
 
-## Expanding the ESLint configuration
+## Frontend Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Built with React + Vite + TypeScript.
+* Used Leaflet.js for the interactive map.
+* Created custom markers with company logos.
+* Added popups for company info (address, industry, etc.).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## UI/UX
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Mobile-first layout.
+* Minimalist dark/light theme.
+* Performance optimization (lazy loading images, only rendering visible markers).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Deployment
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* Hosted on GitHub page (CI/CD from GitHub).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Lessons Learned
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Working with geospatial data.
+* Data wrangling from multiple sources.
+* Integrating external libraries (Leaflet, etc.) into React.
