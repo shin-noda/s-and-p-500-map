@@ -9,6 +9,9 @@ import CompanyMarker from "../companyMarker/CompanyMarker";
 import type { FeatureCollection } from "geojson";
 import type { Company } from "../../types/company";
 
+// utils
+import "../../utils/leafletIcons";
+
 // css
 import "leaflet/dist/leaflet.css";
 
