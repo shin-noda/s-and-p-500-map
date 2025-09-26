@@ -1,0 +1,25 @@
+.analysis-calc-weight {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.analysis-calc-weight .analysis-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.analysis-calc-weight .analysis-subsubtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.analysis-calc-weight .row-sums {
+  font-family: monospace;
+  margin-top: 0.75rem;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}

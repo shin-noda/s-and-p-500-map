@@ -34,7 +34,7 @@ const About = () => {
         <p>
           One day, I was watching the news and heard the term S&P 500 mentioned multiple times. Usually, I don’t pay much attention, but this time it felt different. I became curious about the constituent companies of the S&P 500, so I started researching online. There are many variables like market caps, highs and lows, etc., but I wanted to focus on something more tangible. That’s when I thought, “What if I map the headquarters of these S&P 500 companies?” And that’s how this project began: mapping the locations of S&P 500 companies. <br />
           <br />
-          <em>Note: Some companies have headquarters outside of the US, so in those cases, I picked one location within the US. Also, Canadian companies are outside the US polygon.</em>
+          <em>Note: Companies headquartered outside of the US are not included in this list.</em>
         </p>
       </section>
 
@@ -69,7 +69,7 @@ const About = () => {
       <section id="react-building">
         <h2>4. React Building Time</h2>
         <p>
-          I enjoy building websites with React + Vite, so naturally, I decided to visualize and map the data using the same stack. I named the project <strong>S&P 500 Map</strong> (very creative, huh?). I started with the main page. At that point, I wasn’t sure if I would have more than one page. I chose Leaflet to display the map—it’s free and reliable. Getting the map to show went smoothly. <br/>
+          I enjoy building websites with React + Vite, so naturally, I decided to visualize and map the data using the same stack. I named the project <strong>S&P 500 Map</strong> (very creative, huh?). I started with the main page. At that point, I wasn’t sure if I would have more than one page. I chose Leaflet to display the map because it’s free and reliable. Getting the map to show went smoothly. <br/>
           <br/>
           Next, I wanted to plot the companies on the map with markers. I had all the coordinates, but they were in a Google Sheet, so I needed a file that could be processed in my React project. I wrote a Python script to read the CSV, process the data, and generate a JSON file. <br/>
           <br/>
