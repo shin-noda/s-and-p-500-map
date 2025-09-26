@@ -69,14 +69,39 @@ export function useMoransI({
         if (!intersectsBBox) continue;
 
         let isNeighbor = false;
+
+        const geomI = features[i].geometry;
+        const geomJ = features[j].geometry;
+
         if (contiguity === "queen") {
-          isNeighbor = turf.booleanTouches(features[i], features[j]);
+          const polysI: Feature<Polygon>[] =
+            geomI.type === "Polygon"
+              ? [{ type: "Feature", geometry: geomI, properties: {} }]
+              : geomI.coordinates.map(
+                  (c) => ({ type: "Feature", geometry: { type: "Polygon", coordinates: c }, properties: {} } as Feature<Polygon>)
+                );
+
+          const polysJ: Feature<Polygon>[] =
+            geomJ.type === "Polygon"
+              ? [{ type: "Feature", geometry: geomJ, properties: {} }]
+              : geomJ.coordinates.map(
+                  (c) => ({ type: "Feature", geometry: { type: "Polygon", coordinates: c }, properties: {} } as Feature<Polygon>)
+                );
+
+          outer: for (const pi of polysI) {
+            for (const pj of polysJ) {
+              if (turf.booleanTouches(pi, pj) || turf.booleanOverlap(pi, pj)) {
+                isNeighbor = true;
+                break outer;
+              }
+            }
+          }
         } else if (contiguity === "rook") {
-          isNeighbor =
-            turf.lineIntersect(
-              turf.polygonToLine(features[i]),
-              turf.polygonToLine(features[j])
-            ).features.length > 0;
+          const lineI = turf.polygonToLine(features[i] as Feature<Polygon | MultiPolygon>);
+          const lineJ = turf.polygonToLine(features[j] as Feature<Polygon | MultiPolygon>);
+          if (turf.lineIntersect(lineI, lineJ).features.length > 0) {
+            isNeighbor = true;
+          }
         }
 
         if (isNeighbor) {

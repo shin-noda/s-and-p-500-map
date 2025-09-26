@@ -1,5 +1,5 @@
 // /components/matrixViewer/MatrixViewer.tsx
-import React from "react";
+// css
 import "./MatrixViewer.css";
 
 interface MatrixViewerProps {
@@ -11,7 +11,10 @@ interface MatrixViewerProps {
  * MatrixViewer component
  * Renders a large adjacency/weight matrix in a scrollable table.
  */
-const MatrixViewer: React.FC<MatrixViewerProps> = ({ matrix, labels }) => {
+const MatrixViewer = ({
+  matrix,
+  labels 
+}: MatrixViewerProps) => {
   if (!matrix || matrix.length === 0) {
     return <div className="matrix-empty">No matrix data available.</div>;
   }

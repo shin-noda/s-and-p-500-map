@@ -1,8 +1,12 @@
 // /components/moransI/MoransI.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { useMoransI } from "../../hooks/useMoransI";
-import type { FeatureCollection } from "geojson";
+
+// components
 import MatrixViewer from "../matrixViewer/MatrixViewer";
+
+// types
+import type { FeatureCollection } from "geojson";
 
 interface MoransIProps {
   geojson: FeatureCollection;
@@ -10,11 +14,11 @@ interface MoransIProps {
   contiguity?: "queen" | "rook";
 }
 
-const MoransI: React.FC<MoransIProps> = ({
+const MoransI = ({
   geojson,
   valueProperty,
   contiguity = "queen",
-}) => {
+}: MoransIProps) => {
   const { moransI, neighbors } = useMoransI({ geojson, valueProperty, contiguity });
 
   const [showMatrix, setShowMatrix] = useState(false);
