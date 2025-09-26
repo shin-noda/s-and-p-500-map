@@ -1,6 +1,9 @@
 .analysis-table {
-  margin-bottom: 3.5rem;
-  font-size: 1.1rem;
+  margin: 2rem 0;
+  padding: 0rem 1.5rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
 }
 
 .analysis-subtitle {

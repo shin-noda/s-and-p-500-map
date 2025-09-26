@@ -1,4 +1,4 @@
-.analysis-neighbour-matrix {
+.analysis-calc-weight {
   margin: 2rem 0;
   padding: 0rem 1.5rem;
   padding-bottom: 1.5rem;
@@ -7,9 +7,13 @@
   border: 1px solid #e5e7eb;
 }
 
-.analysis-subtitle {
+.analysis-calc-weight .analysis-subtitle {
   font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.analysis-calc-weight .analysis-subsubtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }

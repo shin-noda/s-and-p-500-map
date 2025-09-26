@@ -16,6 +16,7 @@ const AnalysisIntroduction = () => {
             <p>
             For this analysis, we use queen contiguity to construct the neighbor matrix, as it provides a comprehensive view of neighboring relationships between regions.
             </p>
+            <br/>
             <p>
             <strong>Note: </strong> Alaska, Hawaii, and the District of Columbia are not included in the table or neighbor matrix. Alaska and Hawaii are not contiguous with the mainland United States, making neighbor definitions (queen/rook contiguity) impractical. District of Columbia is very small and has only a few neighbors, which could distort the calculation.
             </p>

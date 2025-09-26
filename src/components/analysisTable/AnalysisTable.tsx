@@ -1,4 +1,5 @@
 import DisplayTable from "../displayTable/DisplayTable";
+import "./AnalysisTable.css";
 
 const AnalysisTable = () => {
     return (
