@@ -23,7 +23,10 @@ const About = () => {
             <a href="#react-building">4. React Building Time</a>
           </li>
           <li>
-            <a href="#conclusion">5. Conclusion</a>
+            <a href="#analysis">5. Analysis</a>
+          </li>
+          <li>
+            <a href="#conclusion">6. Conclusion</a>
           </li>
         </ul>
       </nav>
@@ -85,14 +88,31 @@ const About = () => {
         </p>
       </section>
 
+      <section id="analysis">
+        <h2>5. Spatial Analysis: Moran’s I</h2>
+        <p>
+          After mapping all the headquarters, I became curious about their spatial distribution. Are they clustered in tech hubs and financial centers, uniformly spread, or randomly distributed across the US? To answer this, I calculated <strong>Moran’s I</strong>, a measure of spatial autocorrelation.<br/>
+          <br/>
+          The result was <strong>0.005</strong>, which is very close to 0. This indicates that, at a national scale, the distribution of S&P 500 headquarters is essentially random. While we clearly see clusters in Silicon Valley or New York, these are balanced out by sparse areas elsewhere, making the overall pattern appear random. <br/>
+          <br/>
+          <strong>Interpretation:</strong><br/>
+          <strong>I = 1:</strong> Perfect clustering<br/>
+          <strong>I = 0:</strong> Random distribution<br/>
+          <strong>I = -1:</strong> Perfectly uniform (evenly spaced)<br/>
+          <br/>
+          Our value (<strong>0.005</strong>) is very close to 0 → mostly random at the national scale. This shows that even though there are clear tech and finance clusters, the overall spatial pattern across the US is surprisingly random.
+        </p>
+      </section>
+
       <section id="conclusion">
-        <h2>5. Conclusion</h2>
+        <h2>6. Conclusion</h2>
         <p>
           Lessons I learned: <br/>
           - Finding the headquarters locations and logos of companies took more time than I expected. There is no standardized dataset for this specific task (at least not for free 😉).<br/>
           - Leaflet doesn’t support some features natively, such as showing only one country, so you need to get creative. For example, using GeoJSON and making the rest of the map transparent. (I’m sure there are other solutions too 😎).<br/>
-          - AI made this project a lot easier, such as listing addresses for companies. However, as of September 2025, not all AI-generated results are accurate. Overall, it reduced the time needed to complete the task, but it also created additional work because I had to verify the data. AI is changing the way people approach tasks.<br/><br/>
-
+          - AI made this project a lot easier, such as listing addresses for companies. However, as of September 2025, not all AI-generated results are accurate. Overall, it reduced the time needed to complete the task, but it also created additional work because I had to verify the data. AI is changing the way people approach tasks.<br/>
+          - The spatial pattern of the headquarters of the S&P 500 companies is random🤯.<br/>
+          <br/>
           Thank you for reading this page! Take care :)
         </p>
       </section>

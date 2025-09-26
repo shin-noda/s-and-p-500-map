@@ -1,4 +1,4 @@
-.analysis-intro {
+.analysis-conclusion {
   margin: 2rem 0;
   padding: 1rem 1.5rem;
   background: #f9fafb;
@@ -6,7 +6,8 @@
   border: 1px solid #e5e7eb;
 }
 
-.analysis-intro h2 {
+.analysis-cconclusion h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  color: lightskyblue;
 }
