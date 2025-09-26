@@ -1,0 +1,38 @@
+.notfound-container {
+    margin: 0 auto;       /* centers the container horizontally */
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;   /* centers text inside the container */
+    max-width: 600px;     /* optional: keeps it from stretching too wide */
+}
+
+.notfound-container h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: #ef4444;
+}
+
+.notfound-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.notfound-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.home-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.home-link:hover {
+    background-color: #2563eb;
+}

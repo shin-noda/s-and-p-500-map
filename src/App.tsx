@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import Map from "./components/map/Map";
 import Analysis from "./pages/analysis/Analysis";
 import About from "./pages/about/About";
+import NotFound from "./pages/notFound/NotFound";
 
 // hooks
 import { useSearch } from "./hooks/useSearch";
@@ -40,6 +41,7 @@ const App = () => {
             />
             <Route path="/analysis" element={<Analysis />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 
