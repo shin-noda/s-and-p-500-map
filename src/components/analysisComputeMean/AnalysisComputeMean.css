@@ -1,0 +1,40 @@
+.analysis-compute-mean {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.analysis-compute-mean h2.analysis-subtitle {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.analysis-compute-mean p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.analysis-compute-mean table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.analysis-compute-mean th, .analysis-compute-mean td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.analysis-compute-mean th {
+  background-color: #e5e7eb;
+}
+
+.analysis-compute-mean .MathJax {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}

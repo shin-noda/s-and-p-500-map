@@ -55,28 +55,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "ACGL",
-    "Security": "Arch Capital Group",
-    "GICS_Sector": "Financials",
-    "GICS_Sub_Industry": "Property & Casualty Insurance",
-    "Address": "5 Farm Springs Road, Farmington, CT 06032, USA",
-    "Latitude": 41.709649,
-    "Longitude": -72.803187,
-    "State": "CT",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "ACN",
-    "Security": "Accenture",
-    "GICS_Sector": "Information Technology",
-    "GICS_Sub_Industry": "IT Consulting & Other Services",
-    "Address": "161 N. Clark Street, Chicago, IL 60601, USA",
-    "Latitude": 41.884899,
-    "Longitude": -87.630364,
-    "State": "IL",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "ADBE",
     "Security": "Adobe Inc.",
     "GICS_Sector": "Information Technology",
@@ -253,17 +231,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "ALLE",
-    "Security": "Allegion",
-    "GICS_Sector": "Industrials",
-    "GICS_Sub_Industry": "Building Products",
-    "Address": "1000 Highway 9, Ireland, PA 15037, USA",
-    "Latitude": 40.26924,
-    "Longitude": -79.88977,
-    "State": "PA",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "AMAT",
     "Security": "Applied Materials",
     "GICS_Sector": "Information Technology",
@@ -272,17 +239,6 @@
     "Latitude": 37.377464,
     "Longitude": -121.977967,
     "State": "CA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "AMCR",
-    "Security": "Amcor",
-    "GICS_Sector": "Materials",
-    "GICS_Sub_Industry": "Paper & Plastic Packaging Products & Materials",
-    "Address": "1 Amcor Drive, Zurich, Switzerland (Global HQ)",
-    "Latitude": 39.164566,
-    "Longitude": -85.002193,
-    "State": "IN",
     "DateAdded": "2025-09-25"
   },
   {
@@ -360,17 +316,6 @@
     "Latitude": 37.411769,
     "Longitude": -121.976333,
     "State": "CA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "AON",
-    "Security": "Aon plc",
-    "GICS_Sector": "Financials",
-    "GICS_Sub_Industry": "Insurance Brokers",
-    "Address": "200 E. Randolph Street, Chicago, IL 60601, USA",
-    "Latitude": 41.885267,
-    "Longitude": -87.621483,
-    "State": "IL",
     "DateAdded": "2025-09-25"
   },
   {
@@ -847,17 +792,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "CB",
-    "Security": "Chubb Limited",
-    "GICS_Sector": "Financials",
-    "GICS_Sub_Industry": "Property & Casualty Insurance",
-    "Address": "202 Hall\u2019s Mill Road, Whitehouse Station, NJ 08889, USA",
-    "Latitude": 40.624891,
-    "Longitude": -74.756577,
-    "State": "NJ",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "CBOE",
     "Security": "Cboe Global Markets",
     "GICS_Sector": "Financials",
@@ -1166,6 +1100,17 @@
     "DateAdded": "2025-09-25"
   },
   {
+    "Symbol": "CPAY",
+    "Security": "Corpay",
+    "GICS_Sector": "Financials",
+    "GICS_Sub_Industry": "Transaction & Payment Processing Services",
+    "Address": "3280 Peachtree Rd SUITE 2400, Atlanta, GA 30305, USA",
+    "Latitude": 33.84450,
+    "Longitude": -84.37129,
+    "State": "GA",
+    "DateAdded": "2025-09-25"
+  },
+  {
     "Symbol": "COST",
     "Security": "Costco",
     "GICS_Sector": "Consumer Staples",
@@ -1174,17 +1119,6 @@
     "Latitude": 47.548597,
     "Longitude": -122.050747,
     "State": "WA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "CPAY",
-    "Security": "Corpay",
-    "GICS_Sector": "Financials",
-    "GICS_Sub_Industry": "Transaction & Payment Processing Services",
-    "Address": "700 King Street West, Toronto, ON M5V 1J9, Canada",
-    "Latitude": 43.644124,
-    "Longitude": -79.403262,
-    "State": "ON",
     "DateAdded": "2025-09-25"
   },
   {
@@ -1390,10 +1324,10 @@
     "Security": "Dayforce",
     "GICS_Sector": "Industrials",
     "GICS_Sub_Industry": "Human Resource & Employment Services",
-    "Address": "99 Commerce Valley Drive East, Thornhill, ON L3T 7P6, Canada",
-    "Latitude": 43.840935,
-    "Longitude": -79.375269,
-    "State": "ON",
+    "Address": "3311 E Old Shakopee Rd, Bloomington, MN 55425, USA",
+    "Latitude": 44.811362,
+    "Longitude": -93.322811,
+    "State": "MN",
     "DateAdded": "2025-09-25"
   },
   {
@@ -1694,17 +1628,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "EG",
-    "Security": "Everest Group",
-    "GICS_Sector": "Financials",
-    "GICS_Sub_Industry": "Reinsurance",
-    "Address": "475 Park Avenue South, 7th Floor, New York, NY 10016, USA",
-    "Latitude": 40.745383,
-    "Longitude": -73.982247,
-    "State": "NY",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "EIX",
     "Security": "Edison International",
     "GICS_Sector": "Utilities",
@@ -1856,17 +1779,6 @@
     "Latitude": 37.561052,
     "Longitude": -122.287788,
     "State": "CA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "ETN",
-    "Security": "Eaton Corporation",
-    "GICS_Sector": "Industrials",
-    "GICS_Sub_Industry": "Electrical Components & Equipment",
-    "Address": "1000 Eaton Boulevard, Cleveland, OH 44122, USA",
-    "Latitude": 41.455423,
-    "Longitude": -81.503816,
-    "State": "OH",
     "DateAdded": "2025-09-25"
   },
   {
@@ -2827,17 +2739,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "JCI",
-    "Security": "Johnson Controls",
-    "GICS_Sector": "Industrials",
-    "GICS_Sub_Industry": "Building Products",
-    "Address": "5757 N. Green Bay Avenue, Milwaukee, WI 53209, USA",
-    "Latitude": 43.125093,
-    "Longitude": -87.938687,
-    "State": "WI",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "JKHY",
     "Security": "Jack Henry & Associates",
     "GICS_Sector": "Financials",
@@ -3091,17 +2992,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "LIN",
-    "Security": "Linde plc",
-    "GICS_Sector": "Materials",
-    "GICS_Sub_Industry": "Industrial Gases",
-    "Address": "The Broomfield Building, Berkeley Avenue, Guildford, UK (Global HQ)",
-    "Latitude": 39.050512,
-    "Longitude": -77.819721,
-    "State": "VA",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "LKQ",
     "Security": "LKQ Corporation",
     "GICS_Sector": "Consumer Discretionary",
@@ -3168,17 +3058,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "LULU",
-    "Security": "Lululemon Athletica",
-    "GICS_Sector": "Consumer Discretionary",
-    "GICS_Sub_Industry": "Apparel, Accessories & Luxury Goods",
-    "Address": "1818 Cornwall Avenue, Vancouver, BC V6J 1C7, Canada",
-    "Latitude": 49.271999,
-    "Longitude": -123.147106,
-    "State": "BC",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "LUV",
     "Security": "Southwest Airlines",
     "GICS_Sector": "Industrials",
@@ -3209,17 +3088,6 @@
     "Latitude": 46.212185,
     "Longitude": -119.110569,
     "State": "WA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "LYB",
-    "Security": "LyondellBasell",
-    "GICS_Sector": "Materials",
-    "GICS_Sub_Industry": "Specialty Chemicals",
-    "Address": "1221 McKinney Street, Suite 2000, Houston, TX 77010, USA",
-    "Latitude": 29.756024,
-    "Longitude": -95.362468,
-    "State": "TX",
     "DateAdded": "2025-09-25"
   },
   {
@@ -3330,17 +3198,6 @@
     "Latitude": 40.816349,
     "Longitude": -74.367747,
     "State": "NJ",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "MDT",
-    "Security": "Medtronic",
-    "GICS_Sector": "Health Care",
-    "GICS_Sub_Industry": "Health Care Equipment",
-    "Address": "710 Medtronic Parkway, Minneapolis, MN 55432, USA",
-    "Latitude": 45.069564,
-    "Longitude": -93.251436,
-    "State": "MN",
     "DateAdded": "2025-09-25"
   },
   {
@@ -3817,17 +3674,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "NXPI",
-    "Security": "NXP Semiconductors",
-    "GICS_Sector": "Information Technology",
-    "GICS_Sub_Industry": "Semiconductors",
-    "Address": "3400 East Harmony Road, Fort Collins, CO 80528, USA",
-    "Latitude": 40.526077,
-    "Longitude": -105.016286,
-    "State": "CO",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "O",
     "Security": "Realty Income",
     "GICS_Sector": "Real Estate",
@@ -4122,17 +3968,6 @@
     "Latitude": 40.440526,
     "Longitude": -80.00029,
     "State": "PA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "PNR",
-    "Security": "Pentair",
-    "GICS_Sector": "Industrials",
-    "GICS_Sub_Industry": "Industrial Machinery & Supplies & Components",
-    "Address": "2001 Gateway Place, Suite 700, Irving, TX 75063, USA",
-    "Latitude": 32.885662,
-    "Longitude": -96.978567,
-    "State": "TX",
     "DateAdded": "2025-09-25"
   },
   {
@@ -4587,17 +4422,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "STE",
-    "Security": "Steris",
-    "GICS_Sector": "Health Care",
-    "GICS_Sub_Industry": "Health Care Equipment",
-    "Address": "5960 Heisley Road, Mentor, OH 44060, USA",
-    "Latitude": 41.71041,
-    "Longitude": -81.308465,
-    "State": "OH",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "STLD",
     "Security": "Steel Dynamics",
     "GICS_Sector": "Materials",
@@ -4620,17 +4444,6 @@
     "DateAdded": "2025-09-25"
   },
   {
-    "Symbol": "STX",
-    "Security": "Seagate Technology",
-    "GICS_Sector": "Information Technology",
-    "GICS_Sub_Industry": "Technology Hardware, Storage & Peripherals",
-    "Address": "10200 S. De Anza Blvd, Cupertino, CA 95014, USA",
-    "Latitude": 37.320706,
-    "Longitude": -122.031455,
-    "State": "CA",
-    "DateAdded": "2025-09-25"
-  },
-  {
     "Symbol": "STZ",
     "Security": "Constellation Brands",
     "GICS_Sector": "Consumer Staples",
@@ -4639,17 +4452,6 @@
     "Latitude": 43.028203,
     "Longitude": -77.434512,
     "State": "NY",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "SW",
-    "Security": "Smurfit Westrock",
-    "GICS_Sector": "Materials",
-    "GICS_Sub_Industry": "Paper & Plastic Packaging Products & Materials",
-    "Address": "6670 Bellaire Boulevard, Houston, TX 77074, USA",
-    "Latitude": 29.705549,
-    "Longitude": -95.50047,
-    "State": "TX",
     "DateAdded": "2025-09-25"
   },
   {
@@ -4760,17 +4562,6 @@
     "Latitude": 44.995347,
     "Longitude": -93.228793,
     "State": "MN",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "TEL",
-    "Security": "TE Connectivity",
-    "GICS_Sector": "Information Technology",
-    "GICS_Sub_Industry": "Electronic Manufacturing Services",
-    "Address": "305 Constitution Drive, Berwyn, PA 19312, USA",
-    "Latitude": 39.8768,
-    "Longitude": -75.329653,
-    "State": "PA",
     "DateAdded": "2025-09-25"
   },
   {
@@ -4947,17 +4738,6 @@
     "Latitude": 36.154043,
     "Longitude": -94.154287,
     "State": "AR",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "TT",
-    "Security": "Trane Technologies",
-    "GICS_Sector": "Industrials",
-    "GICS_Sub_Industry": "Building Products",
-    "Address": "4200 W. Green Oaks Boulevard, Suite 200, Arlington, TX 76016, USA",
-    "Latitude": 32.681039,
-    "Longitude": -97.195603,
-    "State": "TX",
     "DateAdded": "2025-09-25"
   },
   {
@@ -5409,17 +5189,6 @@
     "Latitude": 40.059855,
     "Longitude": -75.65134,
     "State": "PA",
-    "DateAdded": "2025-09-25"
-  },
-  {
-    "Symbol": "WTW",
-    "Security": "Willis Towers Watson",
-    "GICS_Sector": "Financials",
-    "GICS_Sub_Industry": "Insurance Brokers",
-    "Address": "725 South Figueroa Street, Los Angeles, CA 90017, USA",
-    "Latitude": 34.04886,
-    "Longitude": -118.26071,
-    "State": "CA",
     "DateAdded": "2025-09-25"
   },
   {
