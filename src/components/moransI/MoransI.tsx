@@ -1,6 +1,6 @@
 // /components/moransI/MoransI.tsx
 import React, { useState } from "react";
-import { useMoransI } from "../../utils/useMoransI";
+import { useMoransI } from "../../hooks/useMoransI";
 import type { FeatureCollection } from "geojson";
 import MatrixViewer from "../matrixViewer/MatrixViewer";
 
