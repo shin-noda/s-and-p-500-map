@@ -1,6 +1,7 @@
 # Project Overview
 
 S&P 500 Map visualizes the headquarters of the largest US companies on an interactive world map. It allows users to explore geographic distributions, see company details, and spot patterns across industries.
+Link: https://shin-noda.github.io/s-and-p-500-map/
 
 ## Data Collection
 
